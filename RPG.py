@@ -10,7 +10,7 @@ class Personagem(SerVivo):
 
     def atacar(self, personagem_atacado):
         try:
-            if self.verifica_personagem_vivo(self, personagem_atacado):
+            if self.verifica_personagem_vivo(personagem_atacado):
                 if personagem_atacado.nome.lower() == 'goblin':
                     personagem_atacado.pontos_vida -= self.pontos_ataque
                     print(f"{self.nome} atacou {personagem_atacado.nome} com {self.pontos_ataque} pontos de ataque.\n{personagem_atacado.nome} agora tem {personagem_atacado.pontos_vida} de pontos de vida.\n")
@@ -22,7 +22,7 @@ class Personagem(SerVivo):
 
     def super_ataque(self, personagem_atacando, personagem_atacado):
         try:
-            if self.verifica_personagem_vivo(personagem_atacando, personagem_atacado):
+            if self.verifica_personagem_vivo(personagem_atacado):
                 if personagem_atacado.nome.lower() == 'goblin':
                     dano = personagem_atacando.pontos_ataque*personagem_atacando.forca / personagem_atacado.inteligencia
                     personagem_atacado.pontos_vida -= dano
@@ -34,10 +34,10 @@ class Personagem(SerVivo):
         except Exception as ex:
             print(ex)
 
-    def verifica_personagem_vivo(self, personagem_atacando, personagem_atacado):
+    def verifica_personagem_vivo(self, personagem_atacado):
         try:
-            if personagem_atacando.pontos_vida <= 0 or personagem_atacado.pontos_vida <= 0:
-                print(f"A Batalha acabou! O {personagem_atacando.nome if personagem_atacando.pontos_vida==0 else personagem_atacado.nome} morreu!")
+            if self.pontos_vida <= 0 or personagem_atacado.pontos_vida <= 0:
+                print(f"A Batalha acabou! O {self.nome if self.pontos_vida==0 else personagem_atacado.nome} morreu!")
                 return False
             return True
         except Exception as ex:
