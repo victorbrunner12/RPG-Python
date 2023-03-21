@@ -1,4 +1,4 @@
-A classe base "SerVivo" é definida com dois atributos inteiros: pontos_vida e pontos_ataque, que representam os pontos de vida e ataque do ser vivo. O atributo booleano personagem_vivo é definido como verdadeiro.
+A classe base "SerVivo" é definida com dois atributos inteiros: pontos_vida e pontos_ataque, que representam os pontos de vida e ataque do ser vivo.
 
 A classe "Personagem" é uma classe derivada de "SerVivo" com um atributo adicional nome, uma string que representa o nome do personagem. Ela também possui dois métodos, "atacar" e "super_ataque", que executam um ataque básico e um ataque especial, respectivamente, em um personagem ou monstro.
 
