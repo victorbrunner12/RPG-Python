@@ -4,7 +4,8 @@ Um sistema que foi projetado para representar um jogo de RPG simples em que mons
 
 A classe base "SerVivo" é definida com dois atributos inteiros: pontos_vida e pontos_ataque, que representam os pontos de vida e ataque do ser vivo.
 
-A classe "Personagem" é uma classe derivada de "SerVivo" com um atributo adicional nome, uma string que representa o nome do personagem. Ela também possui três métodos, "atacar", "super_ataque" e "verifica_personagem_vivo", que executam um ataque básico e um ataque especial, respectivamente, em um personagem ou monstro.
+A classe "Personagem" é uma classe derivada de "SerVivo" com um atributo adicional nome, uma string que representa o nome do personagem. Ela também possui três métodos, "atacar", "super_ataque" e "verifica_personagem_vivo", que executam um ataque básico e um ataque especial, respectivamente, em um personagem 
+ou monstro.
 
 O método "atacar" executa um ataque básico baseado em um dano calculado da seguinte forma:
 	"self.pontos_ataque" é a quantidade de pontos de ataque do personagem atacante.
@@ -30,7 +31,8 @@ O método "super_ataque" executa um ataque calculado, levando em consideração 
 
 O método "verifica_personagem_vivo" executa uma verificação comparando os pontos de vida dos personagem com 0. 
 
-	Se os pontos de vida do personagem atacado ou do personagem que está atacando forem iguais ou menores que zero, é exibida uma mensagem informando que a batalha acabou e qual personagem morreu.
+	Se os pontos de vida do personagem atacado ou do personagem que está atacando forem iguais ou menores que zero, é exibida uma mensagem 
+	informando que a batalha acabou e qual personagem morreu.
 	Se ocorrer algum erro durante a execução da função, a exceção será capturada e uma mensagem de erro será exibida na tela.
 
 A classe "Monstro" é uma classe derivada de "Personagem" com um atributo adicional tipo, que representa o tipo de monstro.
