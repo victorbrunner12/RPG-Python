@@ -25,14 +25,15 @@ O método "super_ataque" executa um ataque calculado, levando em consideração 
 
 	--personagem_atacando.pontos_ataque * personagem_atacando.inteligencia / personagem_atacado.forca--
 
-	OBS: Somente Lobo possui o atributo "forca" e somente o Goblin possui o atributo "inteligencia". Caso o Lobo esteja atacando o Goblin fica:
+	OBS: Somente Lobo possui o atributo "forca" e somente o Goblin possui o atributo "inteligencia". Caso o Lobo esteja atacando 
+	o Goblin fica:
 	
 	--personagem_atacando.pontos_ataque * personagem_atacando.forca / personagem_atacado.inteligencia--
 
 O método "verifica_personagem_vivo" executa uma verificação comparando os pontos de vida dos personagem com 0. 
 
-	Se os pontos de vida do personagem atacado ou do personagem que está atacando forem iguais ou menores que zero, é exibida uma mensagem 
-	informando que a batalha acabou e qual personagem morreu.
+	Se os pontos de vida do personagem atacado ou do personagem que está atacando forem iguais ou menores que zero, é exibida uma 
+	mensagem informando que a batalha acabou e qual personagem morreu.
 	Se ocorrer algum erro durante a execução da função, a exceção será capturada e uma mensagem de erro será exibida na tela.
 
 A classe "Monstro" é uma classe derivada de "Personagem" com um atributo adicional tipo, que representa o tipo de monstro.
