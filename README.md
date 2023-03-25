@@ -23,12 +23,12 @@ O método "super_ataque" executa um ataque calculado, levando em consideração 
 	
 	A fórmula utiliza essas variáveis para determinar a quantidade de dano que o ataque causará ao personagem que está sendo atacado.
 
-	--personagem_atacando.pontos_ataque * personagem_atacando.inteligencia / personagem_atacado.forca--
+	-- personagem_atacando.pontos_ataque * personagem_atacando.inteligencia / personagem_atacado.forca * 1.5--
 
 	OBS: Somente Lobo possui o atributo "forca" e somente o Goblin possui o atributo "inteligencia". Caso o Lobo esteja atacando 
 	o Goblin fica:
 	
-	--personagem_atacando.pontos_ataque * personagem_atacando.forca / personagem_atacado.inteligencia--
+	-- personagem_atacando.pontos_ataque * personagem_atacando.forca / personagem_atacado.inteligencia * 1.5--
 
 O método "verifica_personagem_vivo" executa uma verificação comparando os pontos de vida dos personagem com 0. 
 
